@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+   /* font-family: cairo;*/
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   transition: all 0.2 0 ease-out;
+   box-sizing: border-box;
+
+}
+
+
+
+header img{
+
+    width: 12%;
+    height: 25%;
+    margin-left: 44%;
+    margin-top: 25px;
+    display: flex;
+    align-content: center;
+}
+
+h1{
+    width: 40%;
+    height: 50px;
+    margin-left: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.content::after{
+    content:"" ;
+    width: 25%;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(113, 113, 113);
+    margin-left: 37.5%;
+    
+}
+/*.top{
+    width: 60%;
+    height: 20px;
+    background-color: blueviolet;
+    margin-left: 20%;
+    border-radius: 5px 5px 0 0;
+    margin-top: 30px;
+}*/
+
+form{
+    width: 65%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 17.5%;
+    box-shadow: 5px 0px 10px 5px rgb(224, 224, 224) ;
+    border-radius: 20px;
+    transition: all 0.5s 0.2s ease-in-out ;
+    /*display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;*/
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 10px 10px;
+    position: relative;
+    margin-top: 60px ;
+ 
+    
+
+}
+form::before{
+    content: "";
+    width: 80%;
+    height: 15px;
+    top: -15px;
+    left: 10%;
+    position: absolute;
+    background-image: linear-gradient(to right , red 20% , red 20% , blueviolet 20% , blueviolet 40% , green 40% , green 60% , gray 60% , gray 80% , yellow 80% , yellow 100%);
+    border-radius: 20px 20px 0 0;
+
+}
+
+form::after{
+    content: "";
+    width: 80%;
+    height: 10px;
+    bottom: -12px;
+    left: 10%;
+    position: absolute;
+    background-image: linear-gradient(to right , red 20% , red 20% , blueviolet 20% , blueviolet 40% , green 40% , green 60% , gray 60% , gray 80% , yellow 80% , yellow 100%);
+    border-radius: 0px 0px 20px 20px;
+}
+label{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px ;
+    align-content: center;
+    
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    display: flex;
+    transition: all 0.5s 0.1s   ease-in-out ;
+    align-content: center;
+    box-shadow: 5px 0px 10px 5px rgb(224, 224, 224) ;
+    
+}
+.btn{
+    align-self: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 250px;
+    height: 40px;
+    transition: all 0.2s 0.1s ease-in;
+    order: unset;
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgb(182, 103, 255);
+    
+
+}
+.btn:hover{
+    background-color: rgb(66, 152, 251);
+    border-radius: 5px;
+}
+
+form:hover{
+transform: rotate(180);
+animation-name: change-color;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate;
+
+
+
+}
+
+input:focus{
+    margin-left: 5px;
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+
+}
+#notes1{
+    width: 220%;
+    height: 200px;
+    border-radius: 5px;
+    border: 0.1px solid rgb(189, 189, 189);
+}
+#notes3{
+    width: 220%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.1px solid rgb(189, 189, 189);
+}
+span{
+    text-align: center;
+    color: red;
+    font-weight :bolder;
+    font-size: larger;
+    width: 220%;
+    height: 50px;
+    background-color: aquamarine;
+    margin-top: 25px;
+}
+@keyframes  change-color{
+    0%{
+
+        box-shadow: 5prgb(123, 123, 123)x 10px 5px rgb(93, 93, 93) ;
+    }
+    50%{
+        box-shadow: 5px 5px 10px 5px rgb(106, 93, 112) ;
+
+    }
+    100%{
+        box-shadow: 5prgb(123, 123, 123)x 10px 5px rgb(93, 93, 93) ;
+    }
+}
+::placeholder{
+    color: black;
+    text-align: right;
+}
